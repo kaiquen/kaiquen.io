@@ -1,0 +1,126 @@
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 8rem 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.experience {
+
+}
+
+.content {
+    a, a:link, a:visited {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 800;
+        text-decoration: none;
+        margin-top: 3rem;
+    }
+}
+
+.nav {
+    flex: .3;
+    list-style: none;
+    li {
+
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            color: inherit;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.heading {
+    &__title {
+        margin-bottom: 2rem;
+        font-size:4rem;
+        font-weight: 400;
+        color: var(--primary-color);
+    }
+
+    &__secondary {
+        display: flex;
+        flex-direction: column;
+        
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: #1D1D1D;
+        small {
+            color: #1d1d1d90;
+            line-height: 1.5;
+            font-weight: 400;
+            display: inline-block;       
+        }
+    }
+}
+
+.bio {
+    flex: 1;
+}
+
+.info {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    list-style:square;
+    line-height: 1;    
+}
+
+.item {
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+
+.skills {
+    &__box {
+        ul {
+            width: 400vw;
+            display: flex;
+            overflow: hidden;
+            animation: scrollingX 8s linear infinite alternate;
+        }
+    }
+    &__item {
+        background-color: #fff;
+        list-style: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        width: 20rem;
+        height: 6rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        margin: 0 1rem;
+        p {
+            font-size: 1.8rem;
+            color: var(--color-black);
+        }
+    }
+
+    &__icon {
+        width: 2.2rem;
+        height: 2.2rem;
+        fill: var(--primary-color);
+        margin-right: 1rem;
+    }
+}
+
+@keyframes scrollingX {
+    0% {
+        transform: translate3d(-63rem, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}

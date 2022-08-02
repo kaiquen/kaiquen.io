@@ -1,0 +1,51 @@
+@import './mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+:root {
+    --primary-color: #00747C;
+    --secondary-color: #012340;
+    --tertiary-color: #03A63C;
+    
+    
+    --color-grey-light:#CACACA;
+    --color-grey: #878787;
+    
+    --color-brack: #202022;
+    --color-blue-dark: #172026;
+    --color-background: #1D1D1D;
+    --color-blue: #1500FE;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #1D1D1D;
+    background-color: #FBFAFA;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+}
+
