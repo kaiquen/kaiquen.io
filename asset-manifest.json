@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kaiquen.io/static/css/main.c9dbbb80.css",
-    "main.js": "/kaiquen.io/static/js/main.e914fffc.js",
-    "static/js/787.54c0651d.chunk.js": "/kaiquen.io/static/js/787.54c0651d.chunk.js",
-    "index.html": "/kaiquen.io/index.html",
-    "main.c9dbbb80.css.map": "/kaiquen.io/static/css/main.c9dbbb80.css.map",
-    "main.e914fffc.js.map": "/kaiquen.io/static/js/main.e914fffc.js.map",
-    "787.54c0651d.chunk.js.map": "/kaiquen.io/static/js/787.54c0651d.chunk.js.map"
+    "main.css": "/static/css/main.c9dbbb80.css",
+    "main.js": "/static/js/main.d19d2904.js",
+    "static/js/787.54c0651d.chunk.js": "/static/js/787.54c0651d.chunk.js",
+    "index.html": "/index.html",
+    "main.c9dbbb80.css.map": "/static/css/main.c9dbbb80.css.map",
+    "main.d19d2904.js.map": "/static/js/main.d19d2904.js.map",
+    "787.54c0651d.chunk.js.map": "/static/js/787.54c0651d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9dbbb80.css",
-    "static/js/main.e914fffc.js"
+    "static/js/main.d19d2904.js"
   ]
 }
