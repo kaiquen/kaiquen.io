@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './style.module.scss';
 import {MdVerified} from 'react-icons/md'
 const Experience = () => {
@@ -7,7 +6,7 @@ const Experience = () => {
             <div className={style.experience}>
                 <h1 className={style.heading__title}>Experiências</h1>
                 <div className={style.content}>
-                    <a href="#"><img src="./assets/images/pjmei.webp" alt="" /></a>
+                    <a href="https://www.pjmei.app/"><img src="./assets/images/pjmei.webp" alt="" /></a>
                     <div className={style.bio}>
                         <h1 className={style.heading__secondary}>
                             Estágio - Desenvolvedor Back end 
@@ -20,7 +19,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className={style.content}>
-                    <a href="#"><img src="./assets/images/ifes.png" alt="" /></a>
+                    <a href="https://www.ifes.edu.br/"><img src="./assets/images/ifes.png" alt="" /></a>
                     <div className={style.bio}>
                         <h1 className={style.heading__secondary}>
                             Instituto Federal do Espírito Santo

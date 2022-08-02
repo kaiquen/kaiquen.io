@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import style from './style.module.scss';
-import {motion} from 'framer-motion';
 
 const Header = () => {
     const [show,setShow] = useState(false)
@@ -18,7 +17,7 @@ const Header = () => {
     }
     
     componentDidMount();
- 
+    
     return (
         <div  className={[style.header, show && style['header--show']].join(' ')}>
             <div className={style.heading}>

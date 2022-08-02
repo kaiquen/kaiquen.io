@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import style from './style.module.scss';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { motion } from 'framer-motion';
@@ -12,7 +12,7 @@ const Home = () => {
     }
     
     useEffect(() => {
-      const options = {
+        const options = {
             strings: ['Front-end.', 'Back-end.', 'Fullstack.'],
             typeSpeed: 100,
             backSpeed: 100,
@@ -20,7 +20,6 @@ const Home = () => {
             backDelay: 1200,
             loop:true
         };
-       
         new Typed(el.current, options);
     },[]);
 
@@ -29,7 +28,6 @@ const Home = () => {
             <span className={style.span}>Olá, o meu nome é </span>
             <h1 className={style.heading__primary}>Kaique Nascente Januário</h1>
             <h2 className={style.heading__secondary}>Desenvolvedor <span ref={el}/></h2>
- 
             <motion.div 
                 animate={{ y: 20 }}
                 transition={{
@@ -37,7 +35,6 @@ const Home = () => {
                     repeat: Infinity,
                     repeatType: "mirror",
                     repeatDelay: 0,
-                   
                 }}
                 className={style.arrow}
             >
