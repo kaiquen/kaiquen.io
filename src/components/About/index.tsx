@@ -11,7 +11,7 @@ const About = () => {
                     sempre em busca de conhecimento, tecnologias e ferramentas para melhor 
                     solução do problema.
                 </p>
-                <button className={style.profile__btn}>Baixar resumo</button>
+                <a href="./assets/resumo.pdf"  download className={style.profile__btn}>Baixar resumo</a>
             </div>
 
             <div className={style.gallery}>
