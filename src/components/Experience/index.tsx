@@ -1,5 +1,6 @@
 import style from './style.module.scss';
 import {MdVerified} from 'react-icons/md'
+
 const Experience = () => {
     return (
         <div id='experience' className={style.container}>

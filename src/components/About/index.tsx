@@ -16,12 +16,12 @@ const About = () => {
 
             <div className={style.gallery}>
                 <div className={[style.gallery__box, style['gallery__box--1']].join(' ')}>
-                    <img className={style.gallery__img} src="/assets/images/img-4.jpg" alt="" loading='lazy'/>
-                    <img className={style.gallery__img} src="/assets/images/img-1.jpg" alt="" loading='lazy'/>
+                    <img className={style.gallery__img} src="./assets/images/img-4.jpg" alt="" loading='lazy'/>
+                    <img className={style.gallery__img} src="./assets/images/img-1.jpg" alt="" loading='lazy'/>
                 </div>
                 <div className={[style.gallery__box, style['gallery__box--2']].join(' ')}>
-                    <img className={style.gallery__img} src="/assets/images/img-2.jpg" alt="" loading='lazy'/>
-                    <img className={style.gallery__img} src="/assets/images/img-3.jpg" alt="" loading='lazy'/>               
+                    <img className={style.gallery__img} src="./assets/images/img-2.jpg" alt="" loading='lazy'/>
+                    <img className={style.gallery__img} src="./assets/images/img-3.jpg" alt="" loading='lazy'/>               
                 </div>
             </div>
         </div>
