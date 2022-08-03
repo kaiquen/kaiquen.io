@@ -7,17 +7,17 @@ export const Social = () => {
     <div className={style.social}>
       <ul>
         <li className={style.social__item}>
-          <a href="https://github.com/kaiquen">
+          <a href="https://github.com/kaiquen" target={'_blank'} rel="noopener noreferrer">
             <TiSocialGithub className={style.social__icon}/>
           </a>
         </li>
         <li className={style.social__item}>
-          <a href="https://www.instagram.com/kaique.n/">
+          <a href="https://www.instagram.com/kaique.n/" target={'_blank'} rel="noopener noreferrer">
             <TiSocialInstagram className={style.social__icon}/>
           </a>
         </li>
         <li className={style.social__item}>
-          <a href="https://www.linkedin.com/in/kaiquen/">
+          <a href="https://www.linkedin.com/in/kaiquen/" target={'_blank'} rel="noopener noreferrer">
             <TiSocialLinkedin  className={style.social__icon}/>
           </a>
         </li>
