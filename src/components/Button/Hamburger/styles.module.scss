@@ -1,0 +1,14 @@
+@import "../../../global/mixins.scss";
+
+.container {
+  display: none;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+  }
+}

@@ -1,9 +1,8 @@
 @import '../../global//mixins.scss';
 
-.header {
+.container {
     background-color: transparent;
     position: fixed;
-
     width: 100%;
     height: 5rem;
     padding: 3.5rem 15vw;
@@ -17,6 +16,7 @@
     z-index: 1000;
     
     transition: all 2s;
+    
     &--show {
         background: rgb(251,250,250);
         background: linear-gradient(14deg, rgba(251,250,250,1) 0%, rgba(170,215,173,1) 100%); 
@@ -33,10 +33,10 @@
 }
 
 .heading {
-   
-    
     flex: 1;
     font-size: 1.5rem;
+    color: var(--color-black);
+
     &__title {
         font-weight: 400;
         &::before {
@@ -88,19 +88,6 @@
     }
 }
 
-.menu {
-    display: none;
-    cursor: pointer;
 
-    @include respond(phone) {
-        display: flex;
-        flex-direction: column;
-    
-    }
-    &__row {
-        width: 3rem;
-        height: .2rem;
-        margin: .4rem;
-        background-color: #000;
-    }
-}
+
+

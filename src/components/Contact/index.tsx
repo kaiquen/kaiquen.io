@@ -1,8 +1,8 @@
-import style from './style.module.scss'
+import styles from './styles.module.scss'
 
 const Contact = () => {
     return (
-        <div className={style.contact}>
+        <div className={styles.contact}>
 
         </div>
     )

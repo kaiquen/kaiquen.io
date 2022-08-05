@@ -1,9 +1,15 @@
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
 const Project = () => {
     return (
-        <div className={style.project}>
-            
+        <div id="project" className={styles.project}>
+            <h1 className={styles.heading__primary}>Projetos</h1>
+
+            <div className={styles.content}>
+                <div className={styles.card}>
+
+                </div>
+            </div>
         </div>
     );
 }

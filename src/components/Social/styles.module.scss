@@ -1,14 +1,17 @@
+@import "../../global/mixins.scss";
+
 .social {
   position: fixed;
   bottom: 0;
   left: 5rem;
 
+  @include respond(phone) {
+    left: 1rem;
+  }
 
   &__item {
     list-style: none;
   }
-
-
 
   &__icon {
     width: 3rem;
@@ -28,13 +31,12 @@
   }
 
   &::after {
-    content: '';
-   
+    content: ''; 
     display: block;
     width: 1px;
     height: 90px;
     margin: 20px auto 0;
-   
+  
     opacity: 0.5;
   
     background-color: var(--color-grey);
