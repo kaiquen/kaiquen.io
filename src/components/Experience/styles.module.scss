@@ -1,28 +1,56 @@
+@import "../../global/styles.scss";
+
 .experience {
     width: 80vw;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding: 10rem 0;
-    flex-direction: column;
-    overflow: hidden;
+
+    @include  respond(tab-port) {
+        justify-content: space-around;    
+    }
+
+    @include  respond(phone) {
+        justify-content: space-evenly;
+    }   
 }
 
-.company {
+.container {
+    width: 100%;
     margin-bottom: 4rem;
 }
 
-.content {
+.company {
     a, a:link, a:visited {
         display: inline-block;
         font-size: 3rem;
         font-weight: 800;
         text-decoration: none;
     }
+
     &:not(:last-child) {
         margin-bottom: 4rem;
+    }
+
+    &__bio {
+        flex: 1;
+    }
+
+
+    &__info {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        list-style:square;
+        line-height: 1;    
+    }
+
+    &__item {
+        font-size: 2rem;
+        margin-bottom:1rem;
     }
 }
 
@@ -41,42 +69,26 @@
     }
 }
 
-.bio {
-    flex: 1;
-}
-
-.info {
-    margin-top: 1rem;
-    margin-left: 3rem;
-    list-style:square;
-    line-height: 1;    
-}
-
-.item {
-    font-size: 2rem;
-    margin-bottom:1rem;
-}
-
 .skills {
+    overflow: hidden; 
+    
     &__box {
-        ul {
-            width: 400vw;
-            display: flex;
-            overflow: hidden;
-            animation: scrollingX 8s linear infinite alternate;
-        }
+        width: 180rem;
+        display: flex;
+        align-content: stretch; 
     }
+    
     &__item {
+        flex-grow: 1;
+        flex-basis: 0;
         background-color: #fff;
         list-style: none;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        width: 20rem;
         height: 6rem;
         border-radius: .5rem;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        padding-left: 3rem;
+        justify-content: center;
         margin: 0 1rem;
         p {
             font-size: 1.8rem;
@@ -92,12 +104,3 @@
     }
 }
 
-@keyframes scrollingX {
-    0% {
-        transform: translate3d(-63rem, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-}
